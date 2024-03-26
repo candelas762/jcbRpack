@@ -43,7 +43,8 @@ stdmetrics_z.lasR = function(z, th, distpre="H",denspre="D"){  ###CHANGE th valu
   }
 
   qav<-function(z){ ################################################# added
-    m5<- sum(z^2)/length(z)
+    qav <- sum(z^2)/length(z)
+    return(qav)
   }
 
   metrics = list(
